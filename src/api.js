@@ -2,7 +2,7 @@ import axios from "axios";
 import { serverBasePath } from "../src/consts";
 
 const config = {
-  baseURL: 'https://localhost:7133/api'
+  baseURL: "https://localhost:7133/api",
 };
 // const config = {
 //   baseURL: "https://jsonplaceholder.typicode.com",
