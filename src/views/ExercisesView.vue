@@ -97,11 +97,9 @@ const Teams = computed(()=>store.getters.GetAllTeams);
 store.dispatch("AllStaduims")
 store.dispatch("AllTeams")
 
-
 const Stadiums = computed(()=>store.getters.GetAllTeams);
 const selectedStadium = ref();
-watch(selectedStadium , (newValue)=>{
-   
+watch(selectedStadium , (newValue)=>{   
    store.commit("SetSelectedStaduim", newValue)
 })
 

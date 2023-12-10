@@ -26,6 +26,20 @@ const username = ref(null);
 const password = ref(null);
 
 const loginFunc = ()=>{
+    store.dispatch("_login",{
+      userName:username.value,
+      Password:password.value
+    }).then((res)=>{
+      if(res.data.StatusCode==200){
+          alert("Succesfully Login");
+      }
+      else{
+          alert("error Login");
+      }
+
+    }).catch(err=>{
+      alert(err);
+    })
     router.push('./MainPage');
 }
 

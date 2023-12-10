@@ -1,5 +1,6 @@
 import Vuex from 'vuex';
 import exercises from './exercises.js';
+import login from './loginmodel.js';
 
 export default new Vuex.Store({
     state:{
@@ -14,6 +15,6 @@ export default new Vuex.Store({
         }
     },
     modules:{
-        exercises
+        exercises,login
     }
 })
